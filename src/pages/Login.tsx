@@ -167,10 +167,10 @@ const LoginPage = () => {
             <div className="text-center">
               <span className="text-sm text-gray-600">
                 Haven't sign up yet?{" "}
-                <Link
-    to="/signup"
-    className="ml-1 font-medium text-blue-600 hover:text-blue-500"
-  >
+                <button onClick={() => navigate("/signup")} className="font-medium text-blue-600 hover:text-blue-500" >
+                 
+                  Sign up
+                </button>
     Sign up
   </Link>
               </span>
