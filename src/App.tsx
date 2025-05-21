@@ -10,12 +10,17 @@ import CourseContent from "./pages/CourseContent";
 import Test from "./pages/Test";
 import Code from "./pages/Code";
 import SignUp from "./pages/SignUp";
+import ForgotPassword from "./pages/ForgotPassword";
 
 const App: React.FC = () => {
   return (
     <Router>
       <Routes>
+        <Route path="/" element={<ForgotPassword />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/" element={<Home />} />
         <Route path="/" element={<Login />} />
+        <Route path="/" element={<SignUp />} />
         <Route path="/" element={<SignUp />} />
         <Route path="/signup" element={<SignUp />} />
         <Route path="/" element={<Code />} />
