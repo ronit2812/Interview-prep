@@ -149,7 +149,7 @@ const LoginPage = () => {
               </div>
 
               <div className="text-sm">
-                <button className="font-medium text-blue-600 hover:text-blue-500">
+                <button onClick={() => navigate("/signup")} className="font-medium text-blue-600 hover:text-blue-500">
                   Forget Password?
                 </button>
               </div>
