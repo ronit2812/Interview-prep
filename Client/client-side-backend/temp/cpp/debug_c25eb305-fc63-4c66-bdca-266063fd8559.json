@@ -1,0 +1,83 @@
+{
+  "code": "#include<iostream>\nusing namespace std;\nint main() {\n    int num;\n    cin >> num;\n\n    if (num % 2 == 0) {\n        cout << \"Even\" << endl;\n    } else {\n        cout << \"Odd\" << endl;\n    }\n\n    return 0;\n}",
+  "language": "cpp",
+  "testCases": [
+    {
+      "id": 3,
+      "status": "failed",
+      "input": "10",
+      "output": "Execution error: Command failed: docker exec 15753a97df1d5e411de996239496c5c28d5314382a13ccfd50bc4259b278381d mkdir -p /app/cpp && docker cp D:\\MCA\\PCL\\EasyHustler\\Client\\client-side-backend\\temp\\cpp\\91d76732-21b9-49d7-a246-7d361ca90adc.cpp 15753a97df1d5e411de996239496c5c28d5314382a13ccfd50bc4259b278381d:/app/cpp/91d76732-21b9-49d7-a246-7d361ca90adc.cpp && docker cp D:\\MCA\\PCL\\EasyHustler\\Client\\client-side-backend\\temp\\cpp\\91d76732-21b9-49d7-a246-7d361ca90adc_input.txt 15753a97df1d5e411de996239496c5c28d5314382a13ccfd50bc4259b278381d:/app/cpp/91d76732-21b9-49d7-a246-7d361ca90adc_input.txt && docker exec 15753a97df1d5e411de996239496c5c28d5314382a13ccfd50bc4259b278381d bash -c \"cd /app/cpp && g++ -std=c++17 -o 91d76732-21b9-49d7-a246-7d361ca90adc 91d76732-21b9-49d7-a246-7d361ca90adc.cpp && ./91d76732-21b9-49d7-a246-7d361ca90adc < 91d76732-21b9-49d7-a246-7d361ca90adc_input.txt > 91d76732-21b9-49d7-a246-7d361ca90adc_output.txt 2>&1\" && docker cp 15753a97df1d5e411de996239496c5c28d5314382a13ccfd50bc4259b278381d:/app/cpp/91d76732-21b9-49d7-a246-7d361ca90adc_output.txt D:\\MCA\\PCL\\EasyHustler\\Client\\client-side-backend\\temp\\cpp\\91d76732-21b9-49d7-a246-7d361ca90adc_output.txt\n91d76732-21b9-49d7-a246-7d361ca90adc.cpp: In function 'int main()':\n91d76732-21b9-49d7-a246-7d361ca90adc.cpp:5:5: error: 'cin' was not declared in this scope; did you mean 'std::cin'?\n    5 |     cin >> num;\n      |     ^~~\n      |     std::cin\nIn file included from 91d76732-21b9-49d7-a246-7d361ca90adc.cpp:1:\n/usr/include/c++/13/iostream:62:18: note: 'std::cin' declared here\n   62 |   extern istream cin;           ///< Linked to standard input\n      |                  ^~~\n91d76732-21b9-49d7-a246-7d361ca90adc.cpp:8:9: error: 'cout' was not declared in this scope; did you mean 'std::cout'?\n    8 |         cout << \"Even\" << endl;\n      |         ^~~~\n      |         std::cout\n/usr/include/c++/13/iostream:63:18: note: 'std::cout' declared here\n   63 |   extern ostream cout;          ///< Linked to standard output\n      |                  ^~~~\n91d76732-21b9-49d7-a246-7d361ca90adc.cpp:8:27: error: 'endl' was not declared in this scope; did you mean 'std::endl'?\n    8 |         cout << \"Even\" << endl;\n      |                           ^~~~\n      |                           std::endl\nIn file included from /usr/include/c++/13/iostream:41:\n/usr/include/c++/13/ostream:735:5: note: 'std::endl' declared here\n  735 |     endl(basic_ostream<_CharT, _Traits>& __os)\n      |     ^~~~\n91d76732-21b9-49d7-a246-7d361ca90adc.cpp:10:9: error: 'cout' was not declared in this scope; did you mean 'std::cout'?\n   10 |         cout << \"Odd\" << endl;\n      |         ^~~~\n      |         std::cout\n/usr/include/c++/13/iostream:63:18: note: 'std::cout' declared here\n   63 |   extern ostream cout;          ///< Linked to standard output\n      |                  ^~~~\n91d76732-21b9-49d7-a246-7d361ca90adc.cpp:10:26: error: 'endl' was not declared in this scope; did you mean 'std::endl'?\n   10 |         cout << \"Odd\" << endl;\n      |                          ^~~~\n      |                          std::endl\n/usr/include/c++/13/ostream:735:5: note: 'std::endl' declared here\n  735 |     endl(basic_ostream<_CharT, _Traits>& __os)\n      |     ^~~~\n",
+      "expected": "Expected output 1",
+      "isExample": false,
+      "hidden": false
+    },
+    {
+      "id": 4,
+      "status": "failed",
+      "input": "13",
+      "output": "Execution error: Command failed: docker exec 15753a97df1d5e411de996239496c5c28d5314382a13ccfd50bc4259b278381d mkdir -p /app/cpp && docker cp D:\\MCA\\PCL\\EasyHustler\\Client\\client-side-backend\\temp\\cpp\\91d76732-21b9-49d7-a246-7d361ca90adc.cpp 15753a97df1d5e411de996239496c5c28d5314382a13ccfd50bc4259b278381d:/app/cpp/91d76732-21b9-49d7-a246-7d361ca90adc.cpp && docker cp D:\\MCA\\PCL\\EasyHustler\\Client\\client-side-backend\\temp\\cpp\\91d76732-21b9-49d7-a246-7d361ca90adc_input.txt 15753a97df1d5e411de996239496c5c28d5314382a13ccfd50bc4259b278381d:/app/cpp/91d76732-21b9-49d7-a246-7d361ca90adc_input.txt && docker exec 15753a97df1d5e411de996239496c5c28d5314382a13ccfd50bc4259b278381d bash -c \"cd /app/cpp && g++ -std=c++17 -o 91d76732-21b9-49d7-a246-7d361ca90adc 91d76732-21b9-49d7-a246-7d361ca90adc.cpp && ./91d76732-21b9-49d7-a246-7d361ca90adc < 91d76732-21b9-49d7-a246-7d361ca90adc_input.txt > 91d76732-21b9-49d7-a246-7d361ca90adc_output.txt 2>&1\" && docker cp 15753a97df1d5e411de996239496c5c28d5314382a13ccfd50bc4259b278381d:/app/cpp/91d76732-21b9-49d7-a246-7d361ca90adc_output.txt D:\\MCA\\PCL\\EasyHustler\\Client\\client-side-backend\\temp\\cpp\\91d76732-21b9-49d7-a246-7d361ca90adc_output.txt\n91d76732-21b9-49d7-a246-7d361ca90adc.cpp: In function 'int main()':\n91d76732-21b9-49d7-a246-7d361ca90adc.cpp:5:5: error: 'cin' was not declared in this scope; did you mean 'std::cin'?\n    5 |     cin >> num;\n      |     ^~~\n      |     std::cin\nIn file included from 91d76732-21b9-49d7-a246-7d361ca90adc.cpp:1:\n/usr/include/c++/13/iostream:62:18: note: 'std::cin' declared here\n   62 |   extern istream cin;           ///< Linked to standard input\n      |                  ^~~\n91d76732-21b9-49d7-a246-7d361ca90adc.cpp:8:9: error: 'cout' was not declared in this scope; did you mean 'std::cout'?\n    8 |         cout << \"Even\" << endl;\n      |         ^~~~\n      |         std::cout\n/usr/include/c++/13/iostream:63:18: note: 'std::cout' declared here\n   63 |   extern ostream cout;          ///< Linked to standard output\n      |                  ^~~~\n91d76732-21b9-49d7-a246-7d361ca90adc.cpp:8:27: error: 'endl' was not declared in this scope; did you mean 'std::endl'?\n    8 |         cout << \"Even\" << endl;\n      |                           ^~~~\n      |                           std::endl\nIn file included from /usr/include/c++/13/iostream:41:\n/usr/include/c++/13/ostream:735:5: note: 'std::endl' declared here\n  735 |     endl(basic_ostream<_CharT, _Traits>& __os)\n      |     ^~~~\n91d76732-21b9-49d7-a246-7d361ca90adc.cpp:10:9: error: 'cout' was not declared in this scope; did you mean 'std::cout'?\n   10 |         cout << \"Odd\" << endl;\n      |         ^~~~\n      |         std::cout\n/usr/include/c++/13/iostream:63:18: note: 'std::cout' declared here\n   63 |   extern ostream cout;          ///< Linked to standard output\n      |                  ^~~~\n91d76732-21b9-49d7-a246-7d361ca90adc.cpp:10:26: error: 'endl' was not declared in this scope; did you mean 'std::endl'?\n   10 |         cout << \"Odd\" << endl;\n      |                          ^~~~\n      |                          std::endl\n/usr/include/c++/13/ostream:735:5: note: 'std::endl' declared here\n  735 |     endl(basic_ostream<_CharT, _Traits>& __os)\n      |     ^~~~\n",
+      "expected": "Expected output 2",
+      "isExample": false,
+      "hidden": false
+    },
+    {
+      "id": 5,
+      "status": "failed",
+      "input": "0",
+      "output": "Execution error: Command failed: docker exec 15753a97df1d5e411de996239496c5c28d5314382a13ccfd50bc4259b278381d mkdir -p /app/cpp && docker cp D:\\MCA\\PCL\\EasyHustler\\Client\\client-side-backend\\temp\\cpp\\91d76732-21b9-49d7-a246-7d361ca90adc.cpp 15753a97df1d5e411de996239496c5c28d5314382a13ccfd50bc4259b278381d:/app/cpp/91d76732-21b9-49d7-a246-7d361ca90adc.cpp && docker cp D:\\MCA\\PCL\\EasyHustler\\Client\\client-side-backend\\temp\\cpp\\91d76732-21b9-49d7-a246-7d361ca90adc_input.txt 15753a97df1d5e411de996239496c5c28d5314382a13ccfd50bc4259b278381d:/app/cpp/91d76732-21b9-49d7-a246-7d361ca90adc_input.txt && docker exec 15753a97df1d5e411de996239496c5c28d5314382a13ccfd50bc4259b278381d bash -c \"cd /app/cpp && g++ -std=c++17 -o 91d76732-21b9-49d7-a246-7d361ca90adc 91d76732-21b9-49d7-a246-7d361ca90adc.cpp && ./91d76732-21b9-49d7-a246-7d361ca90adc < 91d76732-21b9-49d7-a246-7d361ca90adc_input.txt > 91d76732-21b9-49d7-a246-7d361ca90adc_output.txt 2>&1\" && docker cp 15753a97df1d5e411de996239496c5c28d5314382a13ccfd50bc4259b278381d:/app/cpp/91d76732-21b9-49d7-a246-7d361ca90adc_output.txt D:\\MCA\\PCL\\EasyHustler\\Client\\client-side-backend\\temp\\cpp\\91d76732-21b9-49d7-a246-7d361ca90adc_output.txt\n91d76732-21b9-49d7-a246-7d361ca90adc.cpp: In function 'int main()':\n91d76732-21b9-49d7-a246-7d361ca90adc.cpp:5:5: error: 'cin' was not declared in this scope; did you mean 'std::cin'?\n    5 |     cin >> num;\n      |     ^~~\n      |     std::cin\nIn file included from 91d76732-21b9-49d7-a246-7d361ca90adc.cpp:1:\n/usr/include/c++/13/iostream:62:18: note: 'std::cin' declared here\n   62 |   extern istream cin;           ///< Linked to standard input\n      |                  ^~~\n91d76732-21b9-49d7-a246-7d361ca90adc.cpp:8:9: error: 'cout' was not declared in this scope; did you mean 'std::cout'?\n    8 |         cout << \"Even\" << endl;\n      |         ^~~~\n      |         std::cout\n/usr/include/c++/13/iostream:63:18: note: 'std::cout' declared here\n   63 |   extern ostream cout;          ///< Linked to standard output\n      |                  ^~~~\n91d76732-21b9-49d7-a246-7d361ca90adc.cpp:8:27: error: 'endl' was not declared in this scope; did you mean 'std::endl'?\n    8 |         cout << \"Even\" << endl;\n      |                           ^~~~\n      |                           std::endl\nIn file included from /usr/include/c++/13/iostream:41:\n/usr/include/c++/13/ostream:735:5: note: 'std::endl' declared here\n  735 |     endl(basic_ostream<_CharT, _Traits>& __os)\n      |     ^~~~\n91d76732-21b9-49d7-a246-7d361ca90adc.cpp:10:9: error: 'cout' was not declared in this scope; did you mean 'std::cout'?\n   10 |         cout << \"Odd\" << endl;\n      |         ^~~~\n      |         std::cout\n/usr/include/c++/13/iostream:63:18: note: 'std::cout' declared here\n   63 |   extern ostream cout;          ///< Linked to standard output\n      |                  ^~~~\n91d76732-21b9-49d7-a246-7d361ca90adc.cpp:10:26: error: 'endl' was not declared in this scope; did you mean 'std::endl'?\n   10 |         cout << \"Odd\" << endl;\n      |                          ^~~~\n      |                          std::endl\n/usr/include/c++/13/ostream:735:5: note: 'std::endl' declared here\n  735 |     endl(basic_ostream<_CharT, _Traits>& __os)\n      |     ^~~~\n",
+      "expected": "Expected output 3",
+      "isExample": false,
+      "hidden": false
+    },
+    {
+      "id": 6,
+      "status": "failed",
+      "input": "-1",
+      "output": "Execution error: Command failed: docker exec 15753a97df1d5e411de996239496c5c28d5314382a13ccfd50bc4259b278381d mkdir -p /app/cpp && docker cp D:\\MCA\\PCL\\EasyHustler\\Client\\client-side-backend\\temp\\cpp\\91d76732-21b9-49d7-a246-7d361ca90adc.cpp 15753a97df1d5e411de996239496c5c28d5314382a13ccfd50bc4259b278381d:/app/cpp/91d76732-21b9-49d7-a246-7d361ca90adc.cpp && docker cp D:\\MCA\\PCL\\EasyHustler\\Client\\client-side-backend\\temp\\cpp\\91d76732-21b9-49d7-a246-7d361ca90adc_input.txt 15753a97df1d5e411de996239496c5c28d5314382a13ccfd50bc4259b278381d:/app/cpp/91d76732-21b9-49d7-a246-7d361ca90adc_input.txt && docker exec 15753a97df1d5e411de996239496c5c28d5314382a13ccfd50bc4259b278381d bash -c \"cd /app/cpp && g++ -std=c++17 -o 91d76732-21b9-49d7-a246-7d361ca90adc 91d76732-21b9-49d7-a246-7d361ca90adc.cpp && ./91d76732-21b9-49d7-a246-7d361ca90adc < 91d76732-21b9-49d7-a246-7d361ca90adc_input.txt > 91d76732-21b9-49d7-a246-7d361ca90adc_output.txt 2>&1\" && docker cp 15753a97df1d5e411de996239496c5c28d5314382a13ccfd50bc4259b278381d:/app/cpp/91d76732-21b9-49d7-a246-7d361ca90adc_output.txt D:\\MCA\\PCL\\EasyHustler\\Client\\client-side-backend\\temp\\cpp\\91d76732-21b9-49d7-a246-7d361ca90adc_output.txt\n91d76732-21b9-49d7-a246-7d361ca90adc.cpp: In function 'int main()':\n91d76732-21b9-49d7-a246-7d361ca90adc.cpp:5:5: error: 'cin' was not declared in this scope; did you mean 'std::cin'?\n    5 |     cin >> num;\n      |     ^~~\n      |     std::cin\nIn file included from 91d76732-21b9-49d7-a246-7d361ca90adc.cpp:1:\n/usr/include/c++/13/iostream:62:18: note: 'std::cin' declared here\n   62 |   extern istream cin;           ///< Linked to standard input\n      |                  ^~~\n91d76732-21b9-49d7-a246-7d361ca90adc.cpp:8:9: error: 'cout' was not declared in this scope; did you mean 'std::cout'?\n    8 |         cout << \"Even\" << endl;\n      |         ^~~~\n      |         std::cout\n/usr/include/c++/13/iostream:63:18: note: 'std::cout' declared here\n   63 |   extern ostream cout;          ///< Linked to standard output\n      |                  ^~~~\n91d76732-21b9-49d7-a246-7d361ca90adc.cpp:8:27: error: 'endl' was not declared in this scope; did you mean 'std::endl'?\n    8 |         cout << \"Even\" << endl;\n      |                           ^~~~\n      |                           std::endl\nIn file included from /usr/include/c++/13/iostream:41:\n/usr/include/c++/13/ostream:735:5: note: 'std::endl' declared here\n  735 |     endl(basic_ostream<_CharT, _Traits>& __os)\n      |     ^~~~\n91d76732-21b9-49d7-a246-7d361ca90adc.cpp:10:9: error: 'cout' was not declared in this scope; did you mean 'std::cout'?\n   10 |         cout << \"Odd\" << endl;\n      |         ^~~~\n      |         std::cout\n/usr/include/c++/13/iostream:63:18: note: 'std::cout' declared here\n   63 |   extern ostream cout;          ///< Linked to standard output\n      |                  ^~~~\n91d76732-21b9-49d7-a246-7d361ca90adc.cpp:10:26: error: 'endl' was not declared in this scope; did you mean 'std::endl'?\n   10 |         cout << \"Odd\" << endl;\n      |                          ^~~~\n      |                          std::endl\n/usr/include/c++/13/ostream:735:5: note: 'std::endl' declared here\n  735 |     endl(basic_ostream<_CharT, _Traits>& __os)\n      |     ^~~~\n",
+      "expected": "Expected output 4",
+      "isExample": false,
+      "hidden": false
+    }
+  ],
+  "results": [
+    {
+      "id": 3,
+      "input": "10",
+      "expected": "Expected output 1",
+      "output": "Even",
+      "status": "passed",
+      "hidden": false
+    },
+    {
+      "id": 4,
+      "input": "13",
+      "expected": "Expected output 2",
+      "output": "Odd",
+      "status": "passed",
+      "hidden": false
+    },
+    {
+      "id": 5,
+      "input": "0",
+      "expected": "Expected output 3",
+      "output": "Even",
+      "status": "passed",
+      "hidden": false
+    },
+    {
+      "id": 6,
+      "input": "-1",
+      "expected": "Expected output 4",
+      "output": "Odd",
+      "status": "passed",
+      "hidden": false
+    }
+  ],
+  "executionDetails": {
+    "runtime": "46 ms",
+    "memory": "5.7 MB",
+    "status": "Accepted",
+    "lastRun": "just now"
+  },
+  "timestamp": "2025-05-23T02:48:45.579Z"
+}

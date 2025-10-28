@@ -1,0 +1,66 @@
+{
+  "code": "#include <iostream>\n#include <cmath>\nusing namespace std;\n\nbool isPrime(int n) {\n    if (n <= 1) return false;\n    for (int i = 2; i <= sqrt(n); ++i)\n        if (n % i == 0)\n            return false;\n    return true;\n}\n\nint main() {\n    int n;\n    cin >> n;\n    if (isPrime(n))\n        cout << \"Prime\";\n    else\n        cout << \"Not prime\";\n    return 0;\n}\n",
+  "language": "cpp",
+  "testCases": [
+    {
+      "id": 4,
+      "status": "failed",
+      "input": "11",
+      "output": "Prime",
+      "expected": "Expected output 1",
+      "isExample": false,
+      "hidden": false
+    },
+    {
+      "id": 5,
+      "status": "failed",
+      "input": "13",
+      "output": "Prime",
+      "expected": "Expected output 2",
+      "isExample": false,
+      "hidden": false
+    },
+    {
+      "id": 6,
+      "status": "failed",
+      "input": "9",
+      "output": "Not Prime",
+      "expected": "Expected output 3",
+      "isExample": false,
+      "hidden": false
+    }
+  ],
+  "results": [
+    {
+      "id": 4,
+      "input": "11",
+      "expected": "Expected output 1",
+      "output": "Prime",
+      "status": "failed",
+      "hidden": false
+    },
+    {
+      "id": 5,
+      "input": "13",
+      "expected": "Expected output 2",
+      "output": "Prime",
+      "status": "failed",
+      "hidden": false
+    },
+    {
+      "id": 6,
+      "input": "9",
+      "expected": "Expected output 3",
+      "output": "Not prime",
+      "status": "failed",
+      "hidden": false
+    }
+  ],
+  "executionDetails": {
+    "runtime": "33 ms",
+    "memory": "8.5 MB",
+    "status": "Wrong Answer",
+    "lastRun": "just now"
+  },
+  "timestamp": "2025-06-05T16:27:16.689Z"
+}

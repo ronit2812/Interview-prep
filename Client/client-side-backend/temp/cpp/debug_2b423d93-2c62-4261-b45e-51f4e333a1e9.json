@@ -1,0 +1,57 @@
+{
+  "code": "import math\n\ndef is_prime(n):\n    if n <= 1:\n        return False\n    for i in range(2, int(math.isqrt(n)) + 1):\n        if n % i == 0:\n            return False\n    return True\n\nn = int(input())\nif is_prime(n):\n    print(\"Prime\")\nelse:\n    print(\"Not prime\")",
+  "language": "cpp",
+  "testCases": [
+    {
+      "input": "11",
+      "expectedOutput": "Prime",
+      "inputType": "Number",
+      "isHidden": false
+    },
+    {
+      "input": "13",
+      "expectedOutput": "Prime",
+      "inputType": "Number",
+      "isHidden": false
+    },
+    {
+      "input": "9",
+      "expectedOutput": "Not prime",
+      "inputType": "Number",
+      "isHidden": false
+    }
+  ],
+  "results": [
+    {
+      "id": 1,
+      "input": "11",
+      "expected": "Prime",
+      "output": "Execution error: Command failed: docker exec 15753a97df1d5e411de996239496c5c28d5314382a13ccfd50bc4259b278381d mkdir -p /app/cpp && docker cp D:\\MCA\\PCL\\EasyHustler\\Client\\client-side-backend\\temp\\cpp\\2b423d93-2c62-4261-b45e-51f4e333a1e9.cpp 15753a97df1d5e411de996239496c5c28d5314382a13ccfd50bc4259b278381d:/app/cpp/2b423d93-2c62-4261-b45e-51f4e333a1e9.cpp && docker cp D:\\MCA\\PCL\\EasyHustler\\Client\\client-side-backend\\temp\\cpp\\2b423d93-2c62-4261-b45e-51f4e333a1e9_input.txt 15753a97df1d5e411de996239496c5c28d5314382a13ccfd50bc4259b278381d:/app/cpp/2b423d93-2c62-4261-b45e-51f4e333a1e9_input.txt && docker exec 15753a97df1d5e411de996239496c5c28d5314382a13ccfd50bc4259b278381d bash -c \"cd /app/cpp && g++ -std=c++17 -o 2b423d93-2c62-4261-b45e-51f4e333a1e9 2b423d93-2c62-4261-b45e-51f4e333a1e9.cpp && ./2b423d93-2c62-4261-b45e-51f4e333a1e9 < 2b423d93-2c62-4261-b45e-51f4e333a1e9_input.txt > 2b423d93-2c62-4261-b45e-51f4e333a1e9_output.txt 2>&1\" && docker cp 15753a97df1d5e411de996239496c5c28d5314382a13ccfd50bc4259b278381d:/app/cpp/2b423d93-2c62-4261-b45e-51f4e333a1e9_output.txt D:\\MCA\\PCL\\EasyHustler\\Client\\client-side-backend\\temp\\cpp\\2b423d93-2c62-4261-b45e-51f4e333a1e9_output.txt\n2b423d93-2c62-4261-b45e-51f4e333a1e9.cpp:1:1: error: 'import' does not name a type\n    1 | import math\n      | ^~~~~~\n2b423d93-2c62-4261-b45e-51f4e333a1e9.cpp:1:1: note: C++20 'import' only available with '-fmodules-ts'\n",
+      "status": "failed",
+      "hidden": false
+    },
+    {
+      "id": 2,
+      "input": "13",
+      "expected": "Prime",
+      "output": "Execution error: Command failed: docker exec 15753a97df1d5e411de996239496c5c28d5314382a13ccfd50bc4259b278381d mkdir -p /app/cpp && docker cp D:\\MCA\\PCL\\EasyHustler\\Client\\client-side-backend\\temp\\cpp\\2b423d93-2c62-4261-b45e-51f4e333a1e9.cpp 15753a97df1d5e411de996239496c5c28d5314382a13ccfd50bc4259b278381d:/app/cpp/2b423d93-2c62-4261-b45e-51f4e333a1e9.cpp && docker cp D:\\MCA\\PCL\\EasyHustler\\Client\\client-side-backend\\temp\\cpp\\2b423d93-2c62-4261-b45e-51f4e333a1e9_input.txt 15753a97df1d5e411de996239496c5c28d5314382a13ccfd50bc4259b278381d:/app/cpp/2b423d93-2c62-4261-b45e-51f4e333a1e9_input.txt && docker exec 15753a97df1d5e411de996239496c5c28d5314382a13ccfd50bc4259b278381d bash -c \"cd /app/cpp && g++ -std=c++17 -o 2b423d93-2c62-4261-b45e-51f4e333a1e9 2b423d93-2c62-4261-b45e-51f4e333a1e9.cpp && ./2b423d93-2c62-4261-b45e-51f4e333a1e9 < 2b423d93-2c62-4261-b45e-51f4e333a1e9_input.txt > 2b423d93-2c62-4261-b45e-51f4e333a1e9_output.txt 2>&1\" && docker cp 15753a97df1d5e411de996239496c5c28d5314382a13ccfd50bc4259b278381d:/app/cpp/2b423d93-2c62-4261-b45e-51f4e333a1e9_output.txt D:\\MCA\\PCL\\EasyHustler\\Client\\client-side-backend\\temp\\cpp\\2b423d93-2c62-4261-b45e-51f4e333a1e9_output.txt\n2b423d93-2c62-4261-b45e-51f4e333a1e9.cpp:1:1: error: 'import' does not name a type\n    1 | import math\n      | ^~~~~~\n2b423d93-2c62-4261-b45e-51f4e333a1e9.cpp:1:1: note: C++20 'import' only available with '-fmodules-ts'\n",
+      "status": "failed",
+      "hidden": false
+    },
+    {
+      "id": 3,
+      "input": "9",
+      "expected": "Not prime",
+      "output": "Execution error: Command failed: docker exec 15753a97df1d5e411de996239496c5c28d5314382a13ccfd50bc4259b278381d mkdir -p /app/cpp && docker cp D:\\MCA\\PCL\\EasyHustler\\Client\\client-side-backend\\temp\\cpp\\2b423d93-2c62-4261-b45e-51f4e333a1e9.cpp 15753a97df1d5e411de996239496c5c28d5314382a13ccfd50bc4259b278381d:/app/cpp/2b423d93-2c62-4261-b45e-51f4e333a1e9.cpp && docker cp D:\\MCA\\PCL\\EasyHustler\\Client\\client-side-backend\\temp\\cpp\\2b423d93-2c62-4261-b45e-51f4e333a1e9_input.txt 15753a97df1d5e411de996239496c5c28d5314382a13ccfd50bc4259b278381d:/app/cpp/2b423d93-2c62-4261-b45e-51f4e333a1e9_input.txt && docker exec 15753a97df1d5e411de996239496c5c28d5314382a13ccfd50bc4259b278381d bash -c \"cd /app/cpp && g++ -std=c++17 -o 2b423d93-2c62-4261-b45e-51f4e333a1e9 2b423d93-2c62-4261-b45e-51f4e333a1e9.cpp && ./2b423d93-2c62-4261-b45e-51f4e333a1e9 < 2b423d93-2c62-4261-b45e-51f4e333a1e9_input.txt > 2b423d93-2c62-4261-b45e-51f4e333a1e9_output.txt 2>&1\" && docker cp 15753a97df1d5e411de996239496c5c28d5314382a13ccfd50bc4259b278381d:/app/cpp/2b423d93-2c62-4261-b45e-51f4e333a1e9_output.txt D:\\MCA\\PCL\\EasyHustler\\Client\\client-side-backend\\temp\\cpp\\2b423d93-2c62-4261-b45e-51f4e333a1e9_output.txt\n2b423d93-2c62-4261-b45e-51f4e333a1e9.cpp:1:1: error: 'import' does not name a type\n    1 | import math\n      | ^~~~~~\n2b423d93-2c62-4261-b45e-51f4e333a1e9.cpp:1:1: note: C++20 'import' only available with '-fmodules-ts'\n",
+      "status": "failed",
+      "hidden": false
+    }
+  ],
+  "executionDetails": {
+    "runtime": "57 ms",
+    "memory": "9.9 MB",
+    "status": "Wrong Answer",
+    "lastRun": "just now"
+  },
+  "timestamp": "2025-06-05T19:04:13.913Z"
+}

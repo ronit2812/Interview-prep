@@ -1,0 +1,83 @@
+{
+  "code": "#include <iostream>\nusing namespace std;\n\nint main() {\n    int num;\n    cin >> num;\n\n    if (num % 2 == 0) {\n        cout << \"Even\" << endl;\n    } else {\n        cout << \"Odd\" << endl;\n    }\n\n    return 0;\n}",
+  "language": "cpp",
+  "testCases": [
+    {
+      "id": 3,
+      "status": "passed",
+      "input": "10",
+      "output": "Even",
+      "expected": "Expected output 1",
+      "isExample": false,
+      "hidden": false
+    },
+    {
+      "id": 4,
+      "status": "passed",
+      "input": "13",
+      "output": "Odd",
+      "expected": "Expected output 2",
+      "isExample": false,
+      "hidden": false
+    },
+    {
+      "id": 5,
+      "status": "passed",
+      "input": "0",
+      "output": "Even",
+      "expected": "Expected output 3",
+      "isExample": false,
+      "hidden": false
+    },
+    {
+      "id": 6,
+      "status": "passed",
+      "input": "-1",
+      "output": "Odd",
+      "expected": "Expected output 4",
+      "isExample": false,
+      "hidden": false
+    }
+  ],
+  "results": [
+    {
+      "id": 3,
+      "input": "10",
+      "expected": "Expected output 1",
+      "output": "Even",
+      "status": "passed",
+      "hidden": false
+    },
+    {
+      "id": 4,
+      "input": "13",
+      "expected": "Expected output 2",
+      "output": "Odd",
+      "status": "passed",
+      "hidden": false
+    },
+    {
+      "id": 5,
+      "input": "0",
+      "expected": "Expected output 3",
+      "output": "Even",
+      "status": "passed",
+      "hidden": false
+    },
+    {
+      "id": 6,
+      "input": "-1",
+      "expected": "Expected output 4",
+      "output": "Odd",
+      "status": "passed",
+      "hidden": false
+    }
+  ],
+  "executionDetails": {
+    "runtime": "32 ms",
+    "memory": "7.6 MB",
+    "status": "Accepted",
+    "lastRun": "just now"
+  },
+  "timestamp": "2025-05-23T01:14:53.484Z"
+}

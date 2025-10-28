@@ -1,0 +1,71 @@
+{
+  "code": "#include <iostream>\nusing namespace std;\n\nint main() {\n    int num;\n    cin >> num;\n\n    if (num % 2 == 0) {\n        cout << \"Even\" << endl;\n    } else {\n        cout << \"Odd\" << endl;\n    }\n    return 0;\n}",
+  "language": "cpp",
+  "testCases": [
+    {
+      "input": "10",
+      "expectedOutput": "Even",
+      "inputType": "Number",
+      "isHidden": false
+    },
+    {
+      "input": "13",
+      "expectedOutput": "Odd",
+      "inputType": "Number",
+      "isHidden": false
+    },
+    {
+      "input": "0",
+      "expectedOutput": "Even",
+      "inputType": "Number",
+      "isHidden": false
+    },
+    {
+      "input": "-1",
+      "expectedOutput": "Odd",
+      "inputType": "Number",
+      "isHidden": false
+    }
+  ],
+  "results": [
+    {
+      "id": 1,
+      "input": "10",
+      "expected": "Even",
+      "output": "Even\n",
+      "status": "passed",
+      "hidden": false
+    },
+    {
+      "id": 2,
+      "input": "13",
+      "expected": "Odd",
+      "output": "Odd\n",
+      "status": "passed",
+      "hidden": false
+    },
+    {
+      "id": 3,
+      "input": "0",
+      "expected": "Even",
+      "output": "Even\n",
+      "status": "passed",
+      "hidden": false
+    },
+    {
+      "id": 4,
+      "input": "-1",
+      "expected": "Odd",
+      "output": "Odd\n",
+      "status": "passed",
+      "hidden": false
+    }
+  ],
+  "executionDetails": {
+    "runtime": "58 ms",
+    "memory": "9.6 MB",
+    "status": "Accepted",
+    "lastRun": "just now"
+  },
+  "timestamp": "2025-06-05T18:57:26.005Z"
+}
