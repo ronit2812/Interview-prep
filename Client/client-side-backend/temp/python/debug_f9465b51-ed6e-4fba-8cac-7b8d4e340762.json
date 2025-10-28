@@ -1,0 +1,57 @@
+{
+  "code": "import math\n\ndef is_prime(n):\n    if n <= 1:\n        return False\n    for i in range(2, int(math.isqrt(n)) + 1):\n        if n % i == 0:\n            return False\n    return True\n\nn = int(input())\nif is_prime(n):\n    print(\"Prime\")\nelse:\n    print(\"Not prime\")\n",
+  "language": "python",
+  "testCases": [
+    {
+      "input": "11",
+      "expectedOutput": "Prime",
+      "inputType": "Number",
+      "isHidden": false
+    },
+    {
+      "input": "13",
+      "expectedOutput": "Prime",
+      "inputType": "Number",
+      "isHidden": false
+    },
+    {
+      "input": "9",
+      "expectedOutput": "Not prime",
+      "inputType": "Number",
+      "isHidden": false
+    }
+  ],
+  "results": [
+    {
+      "id": 1,
+      "input": "11",
+      "expected": "Prime",
+      "output": "Prime",
+      "status": "passed",
+      "hidden": false
+    },
+    {
+      "id": 2,
+      "input": "13",
+      "expected": "Prime",
+      "output": "Prime",
+      "status": "passed",
+      "hidden": false
+    },
+    {
+      "id": 3,
+      "input": "9",
+      "expected": "Not prime",
+      "output": "Not prime",
+      "status": "passed",
+      "hidden": false
+    }
+  ],
+  "executionDetails": {
+    "runtime": "56 ms",
+    "memory": "11.2 MB",
+    "status": "Accepted",
+    "lastRun": "just now"
+  },
+  "timestamp": "2025-06-05T19:25:17.431Z"
+}
